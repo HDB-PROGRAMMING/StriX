@@ -28,18 +28,6 @@
 #ifndef TAU
 #define TAU 6.28318530717958647692528
 #endif
-
-#ifndef lightVelocity
-#define lightVelocity 299792458
-#endif
-
-#ifndef soundVelocity
-#define soundVelocity 343.2
-#endif
-
-#ifndef gravityAcceleration
-#define gravityAcceleration 9.8
-#endif
 // Here we declare necesary constants
 
 static int toInt(double n) {
@@ -453,66 +441,6 @@ static bool isNAN(double n) {
 
 static bool isNAN(float n) {
     if (n == NaN) return true;
-    else return false;
-}
-
-static bool fasterThanLight(int n) {
-    if (n > lightVelocity) return true;
-    else return false;
-}
-
-static bool fasterThanLight(double n) {
-    if (n > lightVelocity) return true;
-    else return false;
-}
-
-static bool fasterThanLight(float n) {
-    if (n > lightVelocity) return true;
-    else return false;
-}
-
-static bool slowerThanLight(int n) {
-    if (n < lightVelocity) return true;
-    else return false;
-}
-
-static bool slowerThanLight(double n) {
-    if (n > lightVelocity) return true;
-    else return false;
-}
-
-static bool slowerThanLight(float n) {
-    if (n > lightVelocity) return true;
-    else return false;
-}
-
-static bool fasterThanSound(int n) {
-    if (n > lightVelocity) return true;
-    else return false;
-}
-
-static bool fasterThanSound(double n) {
-    if (n > lightVelocity) return true;
-    else return false;
-}
-
-static bool fasterThanSound(float n) {
-    if (n > lightVelocity) return true;
-    else return false;
-}
-
-static bool slowerThanSound(int n) {
-    if (n < soundVelocity) return true;
-    else return false;
-}
-
-static bool slowerThanSound(double n) {
-    if (n > soundVelocity) return true;
-    else return false;
-}
-
-static bool slowerThanSound(float n) {
-    if (n > lightVelocity) return true;
     else return false;
 }
 

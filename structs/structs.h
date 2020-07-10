@@ -7,28 +7,28 @@ typedef struct {
 
 typedef struct {
 	int x, y, z;
-} point;
+} POINT;
 
 typedef struct {
 	double side;
 	double area() {
 		return side * side;
 	}
-} square;
+} SQUARE;
 
 typedef struct {
 	double base, height;
 	double area() {
 		return base * height;
 	}
-} rectangle;
+} RECTNGL;
 
 typedef struct {
 	double base, height;
 	double area() {
 		return (base * height) / 2;
 	}
-} triangle;
+} TRNGL;
 
 typedef struct {
 	double radio;
@@ -39,32 +39,32 @@ typedef struct {
 	double lenght() {
 		return diametre * PI;
 	}
-} circle;
+} CIRCLE;
 
 typedef struct {
 	double largestDiagonal, smallestDiagonal;
 	double area() {
 		return (largestDiagonal * smallestDiagonal) / 2;
 	}
-} rhomb;
+} RHOMB;
 
 typedef struct {
 	double base, height;
 	double area() {
 		return base * height;
 	}
-} rhomboid;
+} RHOMBOID;
 
 typedef struct {
 	double largestBase, smallestBase, height;
 	double area() {
 		return ((largestBase + smallestBase) * height) / 2;
 	}
-} trapeze;
+} TRAPEZE;
 
 typedef struct {
 	double perimetre, apothema;
 	double area() {
 		return (perimetre * apothema) / 2;
 	}
-} regPolygon;
+} REGPOL;

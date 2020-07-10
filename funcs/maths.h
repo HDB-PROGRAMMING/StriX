@@ -28,6 +28,10 @@
 #ifndef TAU
 #define TAU 6.28318530717958647692528
 #endif
+
+#ifndef KAPREKAR
+#define KAPREKAR 6174
+#endif
 // Here we declare necesary constants
 
 static int toInt(double n) {

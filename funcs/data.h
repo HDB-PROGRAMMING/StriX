@@ -1,14 +1,8 @@
 #include "../StriX.h"
 // Here we include the library
 
-static void swap(int num1, int num2) {
-	int temp = num1;
-	num1 = num2;
-	num2 = temp;
-}
-
-static void swap(float num1, float num2) {
-	int temp = num1;
+static void swap(double num1, double num2) {
+	double temp = num1;
 	num1 = num2;
 	num2 = temp;
 }
@@ -55,4 +49,20 @@ void sort(int* array, int l, int r) {
         sort(array, m + 1, r);
         mergeSort(array, l, m, r);
     }
+}
+
+static int range(double end) {
+    int nums[toInt(end)];
+    for (int i; i < end; i++) {
+        nums[i] = i;
+    }
+    return *nums;
+}
+
+static int range(double init, double end) {
+    int nums[toInt(end)];
+    for (int i = init; i < end; i++) {
+        nums[i] = i;
+    }
+    return *nums;
 }

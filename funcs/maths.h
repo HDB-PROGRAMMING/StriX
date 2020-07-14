@@ -39,23 +39,8 @@ static int toInt(double n) {
     return val;
 }
 
-static int toInt(float n) {
-    int val = n;
-    return val;
-}
-
-static double toDouble(int n) {
-    double val = n;
-    return val;
-}
-
 static double toDouble(float n) {
     double val = n;
-    return val;
-}
-
-static float toFloat(int n) {
-    float val = n;
     return val;
 }
 
@@ -64,112 +49,44 @@ static float toFloat(double n) {
     return val;
 }
 
-static int sqrArea(int side) {
-    return side * side;
-}
-
 static double sqrArea(double side) {
     return side * side;
-}
-
-static float sqrArea(float side) {
-    return side * side;
-}
-
-static int rctnglArea(int base, int height) {
-    return base * height;
 }
 
 static double rctnglArea(double base, double height) {
     return base * height;
 }
 
-static float rctnglArea(float base, float height) {
-    return base * height;
-}
-
-static int trnglArea(int base, int height) {
-    return (base * height) / 2;
-}
-
 static double trnglArea(double base, double height) {
     return (base * height) / 2;
-}
-
-static float trnglArea(float base, float height) {
-    return (base * height) / 2;
-}
-
-static int rhombArea(int largestDiagonal, int smallestDiagonal) {
-    return (largestDiagonal * smallestDiagonal) / 2;
 }
 
 static double rhombArea(double largestDiagonal, double smallestDiagonal) {
     return (largestDiagonal * smallestDiagonal) / 2;
 }
 
-static float rhombArea(float largestDiagonal, float smallestDiagonal) {
-    return (largestDiagonal * smallestDiagonal) / 2;
-}
-
-static int rhomboidArea(int base, int height) {
-    return base * height;
-}
-
 static double rhomboidArea(double base, double height) {
     return base * height;
-}
-
-static float rhomboidArea(float base, float height) {
-    return base * height;
-}
-
-static int trapArea(int largestBase, int smallestBase, int height) {
-    return ((largestBase + smallestBase) * height) / 2;
 }
 
 static double trapArea(double largestBase, double smallestBase, double height) {
     return ((largestBase + smallestBase) * height) / 2;
 }
 
-static float trapArea(float largestBase, float smallestBase, float height) {
-    return ((largestBase + smallestBase) * height) / 2;
-}
-
-static int regPolygonArea(int perimeter, int apothema) {
-    return (perimeter * apothema) / 2;
-}
-
 static double regPolygonArea(double perimeter, double apothema) {
     return (perimeter * apothema) / 2;
-}
-
-static float regPolygonArea(float perimeter, float apothema) {
-    return (perimeter * apothema) / 2;
-}
-
-static int circArea(int radio) {
-    return (radio * radio) * PI;
 }
 
 static double circArea(double radio) {
     return (radio * radio) * PI;
 }
 
-static float circArea(float radio) {
-    return (radio * radio) * PI;
-}
-
-static int circLenght(int diameter) {
-    return diameter * PI;
-}
-
 static double circLenght(double diameter) {
     return diameter * PI;
 }
 
-static float circLenght(float diameter) {
-    return diameter * PI;
+static double f(double x) {
+    return 0.25 * power(x, 2) - 3;
 }
 
 static int fib(int n) {
@@ -180,14 +97,8 @@ static int fib(int n) {
         n -= 1;
         return a;
     }
-}
 
-static int power(int base, int exp) {
-    double res = base;
-    for (int i; i <= exp; i++) {
-        res *= base;
-    }
-    return res;
+    return 0;
 }
 
 static double power(double base, int exp) {
@@ -198,23 +109,7 @@ static double power(double base, int exp) {
     return res;
 }
 
-static float power(float base, int exp) {
-    double res = base;
-    for (int i; i <= exp; i++) {
-        res *= base;
-    }
-    return res;
-}
-
-static int hypotenuse(int cat1, int cat2) {
-    return sqroot((cat1 * cat1) + (cat2 * cat2));
-}
-
 static double hypotenuse(double cat1, double cat2) {
-    return sqroot((cat1 * cat1) + (cat2 * cat2));
-}
-
-static float hypotenuse(float cat1, float cat2) {
     return sqroot((cat1 * cat1) + (cat2 * cat2));
 }
 
@@ -224,17 +119,7 @@ static int fact(int n) {
     return 0;
 }
 
-static int abslt(int n) {
-    if (n >= 0) return n;
-    else return (n + (n * -2));
-}
-
 static double abslt(double n) {
-    if (n >= 0) return n;
-    else return (n + (n * -2));
-}
-
-static float abslt(float n) {
     if (n >= 0) return n;
     else return (n + (n * -2));
 }
@@ -243,32 +128,12 @@ static double exp(int x) {
     return power(e, x);
 }
 
-static int max(int num1, int num2) {
-    if (num1 > num2) return num1;
-    else return num2;
-}
-
 static double max(double num1, double num2) {
     if (num1 > num2) return num1;
     else return num2;
 }
 
-static float max(float num1, float num2) {
-    if (num1 > num2) return num1;
-    else return num2;
-}
-
-static int min(int num1, int num2) {
-    if (num1 < num2) return num1;
-    else return num2;
-}
-
 static double min(double num1, double num2) {
-    if (num1 < num2) return num1;
-    else return num2;
-}
-
-static float min(float num1, float num2) {
     if (num1 < num2) return num1;
     else return num2;
 }
@@ -316,31 +181,10 @@ static int roundUp(double n) {
     return val++;
 }
 
-static int toPositive(int n) {
-    if (n >= 0) return n;
-    else {
-        return n + (n * -2);
-    }
-}
-
 static double toPositive(double n) {
     if (n >= 0) return n;
     else {
         return n + (n * -2);
-    }
-}
-
-static float toPositive(float n) {
-    if (n >= 0) return n;
-    else {
-        return n + (n * -2);
-    }
-}
-
-static int toNegative(int n) {
-    if (n < 0) return n;
-    else {
-        return n - (n * 2);
     }
 }
 
@@ -351,30 +195,8 @@ static double toNegative(double n) {
     }
 }
 
-static float toNegative(float n) {
-    if (n < 0) return n;
-    else {
-        return n - (n * 2);
-    }
-}
-
-static bool isPI(int n) {
-    if (n == PI) return true;
-    else return false;
-}
-
 static bool isPI(double n) {
     if (n == PI) return true;
-    else return false;
-}
-
-static bool isPI(float n) {
-    if (n == PI) return true;
-    else return false;
-}
-
-static bool isEULER(int n) {
-    if (n == e) return true;
     else return false;
 }
 
@@ -383,28 +205,8 @@ static bool isEULER(double n) {
     else return false;
 }
 
-static bool isEULER(float n) {
-    if (n == e) return true;
-    else return false;
-}
-
-static bool isGAMMA(int n) {
-    if (n == GAMMA) return true;
-    else return false;
-}
-
 static bool isGAMMA(double n) {
     if (n == GAMMA) return true;
-    else return false;
-}
-
-static bool isGAMMA(float n) {
-    if (n == GAMMA) return true;
-    else return false;
-}
-
-static bool isTAU(int n) {
-    if (n == TAU) return true;
     else return false;
 }
 
@@ -413,28 +215,8 @@ static bool isTAU(double n) {
     else return false;
 }
 
-static bool isTAU(float n) {
-    if (n == TAU) return true;
-    else return false;
-}
-
-static bool isINFINITY(int n) {
-    if (n == INFINITY) return true;
-    else return false;
-}
-
 static bool isINFINITY(double n) {
     if (n == INFINITY) return true;
-    else return false;
-}
-
-static bool isINFINITY(float n) {
-    if (n == INFINITY) return true;
-    else return false;
-}
-
-static bool isNAN(int n) {
-    if (n == NaN) return true;
     else return false;
 }
 
@@ -443,19 +225,6 @@ static bool isNAN(double n) {
     else return false;
 }
 
-static bool isNAN(float n) {
-    if (n == NaN) return true;
-    else return false;
-}
-
-static void destroyVariable(int variable) {
-    variable = NULL;
-}
-
 static void destroyVariable(double variable) {
-    variable = NULL;
-}
-
-static void destroyVariable(float variable) {
     variable = NULL;
 }

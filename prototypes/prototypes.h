@@ -25,6 +25,8 @@ static int sqroot(double num, double apx, int n);
 static int sqroot(int n);
 static int roundFloor(double n);
 static int roundUp(double n);
+static double extend(double num, int quantity);
+static double shorten(double num, int quantity);
 static double toPositive(double n);
 static double toNegative(double n);
 static bool isPI(double n);

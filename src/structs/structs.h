@@ -1,9 +1,10 @@
 #include "../StriX.h"
 // Here we include the library
 
-typedef struct {
-	char* String;
-} String;
+class String {
+public:
+	char* string;
+};
 
 typedef struct {
 	int x, y, z;

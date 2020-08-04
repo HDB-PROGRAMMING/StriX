@@ -1,3 +1,7 @@
+static double addt(double nums[], int lenght);
+static double subt(double nums[], int lenght);
+static double mult(double nums[], int lenght);
+static double divt(double nums[], int lenght);
 static int toInt(double n);
 static double toDouble(float n);
 static float toFloat(double n);

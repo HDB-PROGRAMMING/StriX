@@ -34,6 +34,42 @@
 #endif
 // Here we declare necesary constants
 
+static double addt(double nums[], int lenght) {
+	double tmp = nums[0];
+	for (int i = 1; i < lenght; i++) {
+		tmp += nums[i];
+	}
+
+	return tmp;
+}
+
+static double subt(double nums[], int lenght) {
+    double tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp -= nums[i];
+    }
+
+    return tmp;
+}
+
+static double mult(double nums[], int lenght) {
+    double tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp *= nums[i];
+    }
+
+    return tmp;
+}
+
+static double divt(double nums[], int lenght) {
+    double tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp /= nums[i];
+    }
+
+    return tmp;
+}
+
 static int toInt(double n) {
     int val = n;
     return val;

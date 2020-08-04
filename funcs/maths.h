@@ -181,6 +181,14 @@ static int roundUp(double n) {
     return val++;
 }
 
+static double extend(double num, int quantity){
+	return num * power(10, quantity);
+}
+
+static double shorten(double num, int quantity){
+	return num / power(10, quantity);
+}
+
 static double toPositive(double n) {
     if (n >= 0) return n;
     else {

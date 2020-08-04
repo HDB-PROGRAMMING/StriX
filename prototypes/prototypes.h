@@ -79,6 +79,19 @@ static bool isINFINITY(float n);
 static bool isNAN(int n);
 static bool isNAN(double n);
 static bool isNAN(float n);
+static void destroyVariable(int variable);
+static void destroyVariable(double variable);
+static void destroyVariable(float variable);
+// Here we defined Maths' functions
+
+static void swap(int num1, int num2);
+static void swap(float num1, float num2);
+static void mergeSort(int* array, int l, int m, int r);
+void sort(int* array, int l, int r);
+// Here we defined Data's functions
+
+static double energy(double mass);
+static double force(double mass, double acceleration);
 static bool fasterThanLight(int n);
 static bool fasterThanLight(double n);
 static bool fasterThanLight(float n);
@@ -91,13 +104,4 @@ static bool fasterThanSound(float n);
 static bool slowerThanSound(int n);
 static bool slowerThanSound(double n);
 static bool slowerThanSound(float n);
-static void destroyVariable(int variable);
-static void destroyVariable(double variable);
-static void destroyVariable(float variable);
-// Here we defined Maths' functions
-
-static void swap(int num1, int num2);
-static void swap(float num1, float num2);
-static void mergeSort(int* array, int l, int m, int r);
-void sort(int* array, int l, int r);
-// Here we defined Data's functions
+// Here we defined Physics' functions

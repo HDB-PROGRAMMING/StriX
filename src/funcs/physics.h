@@ -1,18 +1,6 @@
 #include "../StriX.h"
 // Here we include the library
 
-#ifndef lightVelocity
-#define lightVelocity 299792.458
-#endif
-
-#ifndef soundVelocity
-#define soundVelocity 0.3432
-#endif
-
-#ifndef gravityAcceleration
-#define gravityAcceleration 9.8
-#endif
-
 static double energy(double mass) {
     return mass * (lightVelocity * lightVelocity);
 }

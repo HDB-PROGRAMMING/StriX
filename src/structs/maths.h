@@ -1,9 +1,5 @@
-#include "../StriX.h"
-// Here we include the library
-
-typedef struct {
-	char* String;
-} String;
+#pragma once
+// Here we define that the module is only imported once
 
 typedef struct {
 	int x, y, z;

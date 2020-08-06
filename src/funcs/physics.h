@@ -1,5 +1,5 @@
-#include "../StriX.h"
-// Here we include the library
+#pragma once
+// Here we define that the module is only imported once
 
 static double energy(double mass) {
     return mass * (lightVelocity * lightVelocity);

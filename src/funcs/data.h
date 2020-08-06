@@ -1,5 +1,5 @@
-#include "../StriX.h"
-// Here we include the library
+#pragma once
+// Here we define that the module is only imported once
 
 static void swap(double num1, double num2) {
 	double temp = num1;

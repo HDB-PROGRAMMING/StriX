@@ -1,5 +1,9 @@
 output:
-	g++ -Wall -Wextra -O -ansi -pedantic -fPIC -shared src/StriX.h -o StriX.so
+	touch tmp.h
+	echo "#include \"src/StriX.h\"" > tmp.h
+	g++ -Wall -Wextra -O -ansi -pedantic -fPIC -shared tmp.h -o StriX.so
 
 install:
-	g++ -Wall -Wextra -O -ansi -pedantic -fPIC -shared StriX.h -o /lib/StriX.so
+	touch tmp.h
+	echo "#include \"src/StriX.h\"" > tmp.h
+	g++ -Wall -Wextra -O -ansi -pedantic -fPIC -shared tmp.h -o /lib/StriX.so

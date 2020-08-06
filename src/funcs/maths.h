@@ -1,5 +1,5 @@
-#include "../StriX.h"
-// Here we include the library
+#pragma once
+// Here we define that the module is only imported once
 
 static double addt(double nums[], int lenght) {
 	double tmp = nums[0];
@@ -32,6 +32,15 @@ static double divt(double nums[], int lenght) {
     double tmp = nums[0];
     for (int i = 1; i < lenght; i++) {
         tmp /= nums[i];
+    }
+
+    return tmp;
+}
+
+static double powt(double nums[], int lenght) {
+    double tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp = pow(tmp, nums[i]);
     }
 
     return tmp;
@@ -88,10 +97,6 @@ static double circLenght(double diameter) {
     return diameter * PI;
 }
 
-static double f(double x) {
-    return 0.25 * power(x, 2) - 3;
-}
-
 static int fib(int n) {
     int a = 0;
     int b = 1;
@@ -128,7 +133,7 @@ static double abslt(double n) {
 }
 
 static double exp(int x) {
-    return power(e, x);
+    return pow(e, x);
 }
 
 static double max(double num1, double num2) {
@@ -185,11 +190,11 @@ static int roundUp(double n) {
 }
 
 static double extend(double num, int quantity){
-	return num * power(10, quantity);
+	return num * pow(10, quantity);
 }
 
 static double shorten(double num, int quantity){
-	return num / power(10, quantity);
+	return num / pow(10, quantity);
 }
 
 static double toPositive(double n) {
@@ -236,6 +241,8 @@ static bool isNAN(double n) {
     else return false;
 }
 
-static void destroyVariable(double variable) {
-    variable = NULL;
+static double* destroyVariable(double* variable) {
+    double* tmp = variable;
+    free(variable);
+    return tmp;
 }

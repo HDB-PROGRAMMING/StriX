@@ -15,6 +15,7 @@
 #include "funcs/data.h"
 #include "funcs/physics.h"
 
-#include "structs/structs.h"
+#include "structs/maths.h"
+#include "structs/datat.h"
 
 #endif

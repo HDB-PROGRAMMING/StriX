@@ -3,7 +3,7 @@
 
 typedef struct {
 	int x, y, z;
-} POINT;
+} POINT3d;
 
 typedef struct {
 	double side;

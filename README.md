@@ -1,7 +1,7 @@
-# StriX, the ultimate Open Source library for maths and data management
+# StriX, the ultimate Open Source framework for maths and data management
 **StriX** is an Open Source framework for maths and data management, it contains multiple functions such as the popular algorithm Merge Sort, you can download this library to use it in your maths, physics and data projects.
 
-### How can I install StriX in my computer?
+## How can I install StriX in my computer?
 You can install StriX by various ways, these are the ways you can install it in Windows, MacOS X and GNU/Linux.
 
 #### Windows
@@ -24,7 +24,7 @@ cd StriX
 sudo make install
 ```
 
-### How can I use StriX in my project?
+## How can I use StriX in my project?
 The first thing you need to do is install StriX, then go to the file you want to include StriX and follow the instructions below for your programming language, StriX is aviable for C/C++ and Python with ctypes (cdll).
 
 #### C/C++

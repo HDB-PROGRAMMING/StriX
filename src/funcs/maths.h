@@ -1,6 +1,15 @@
 #pragma once
 // Here we define that the module is only imported once
 
+static int addt(int nums[], int lenght) {
+    int tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp += nums[i];
+    }
+
+    return tmp;
+}
+
 static double addt(double nums[], int lenght) {
 	double tmp = nums[0];
 	for (int i = 1; i < lenght; i++) {
@@ -10,10 +19,48 @@ static double addt(double nums[], int lenght) {
 	return tmp;
 }
 
+static float addt(float nums[], int lenght) {
+    float tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp += nums[i];
+    }
+
+    return tmp;
+}
+// Here are addt functions
+
+static int subt(int nums[], int lenght) {
+    int tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp -= nums[i];
+    }
+
+    return tmp;
+}
+
 static double subt(double nums[], int lenght) {
     double tmp = nums[0];
     for (int i = 1; i < lenght; i++) {
         tmp -= nums[i];
+    }
+
+    return tmp;
+}
+
+static float subt(float nums[], int lenght) {
+    float tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp -= nums[i];
+    }
+
+    return tmp;
+}
+// Here are subt functions
+
+static int mult(int nums[], int lenght) {
+    int tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp *= nums[i];
     }
 
     return tmp;
@@ -28,10 +75,48 @@ static double mult(double nums[], int lenght) {
     return tmp;
 }
 
+static float mult(float nums[], int lenght) {
+    float tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp *= nums[i];
+    }
+
+    return tmp;
+}
+// Here are mult functions
+
+static int divt(int nums[], int lenght) {
+    int tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp /= nums[i];
+    }
+
+    return tmp;
+}
+
 static double divt(double nums[], int lenght) {
     double tmp = nums[0];
     for (int i = 1; i < lenght; i++) {
         tmp /= nums[i];
+    }
+
+    return tmp;
+}
+
+static float divt(float nums[], int lenght) {
+    float tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp /= nums[i];
+    }
+
+    return tmp;
+}
+// Here are divt functions
+
+static int powt(int nums[], int lenght) {
+    int tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp = pow(tmp, nums[i]);
     }
 
     return tmp;
@@ -45,6 +130,16 @@ static double powt(double nums[], int lenght) {
 
     return tmp;
 }
+
+static float powt(float nums[], int lenght) {
+    float tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp = pow(tmp, nums[i]);
+    }
+
+    return tmp;
+}
+// Here are powt functions
 
 static int toInt(double n) {
     int val = n;
@@ -60,6 +155,7 @@ static float toFloat(double n) {
     float val = n;
     return val;
 }
+// Here we defined data types conversion functions
 
 static double sqrArea(double side) {
     return side * side;
@@ -96,17 +192,22 @@ static double circArea(double radio) {
 static double circLenght(double diameter) {
     return diameter * PI;
 }
+// Here we defined geometric areas functions
 
-static int fib(int n) {
+static int* fib(int n) {
+    int* nums;
+    int i = 0;
+    
     int a = 0;
     int b = 1;
     while (n > 0) {
         a, b = b, a + b;
         n -= 1;
-        return a;
+        nums[i] = a;
+        i++;
     }
 
-    return 0;
+    return nums;
 }
 
 static double power(double base, int exp) {

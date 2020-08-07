@@ -1,8 +1,18 @@
+static int    addt(int    nums[], int lenght);
 static double addt(double nums[], int lenght);
+static float  addt(float  nums[], int lenght);
+static int    subt(int    nums[], int lenght);
 static double subt(double nums[], int lenght);
+static float  subt(float  nums[], int lenght);
+static int    mult(int    nums[], int lenght);
 static double mult(double nums[], int lenght);
+static float  mult(float  nums[], int lenght);
+static int    divt(int    nums[], int lenght);
 static double divt(double nums[], int lenght);
+static float  divt(float  nums[], int lenght);
+static int    powt(int    nums[], int lenght);
 static double powt(double nums[], int lenght);
+static float  powt(float  nums[], int lenght);
 static int toInt(double n);
 static double toDouble(float n);
 static float toFloat(double n);
@@ -15,7 +25,7 @@ static double trapArea(double largestBase, double smallestBase, double height);
 static double regPolygonArea(double perimeter, double apothema);
 static double circArea(double radio);
 static double circLenght(double diameter);
-static int fib(int n);
+static int* fib(int n);
 static double power(double base, int exp);
 static double hypotenuse(double cat1, double cat2);
 static int fact(int n);
@@ -39,7 +49,7 @@ static bool isGAMMA(double n);
 static bool isTAU(double n);
 static bool isINFINITY(double n);
 static bool isNAN(double n);
-static void destroyVariable(double variable);
+static double* destroyVariable(double* variable);
 // Here we defined Maths' functions
 
 static void swap(double num1, double num2);
@@ -56,3 +66,8 @@ static bool slowerThanLight(double n);
 static bool fasterThanSound(double n);
 static bool slowerThanSound(double n);
 // Here we defined Physics' functions
+
+static void gotoxy(int x, int y);
+static void hideCursor();
+static void showCursor();
+// Here we defined Console's functions

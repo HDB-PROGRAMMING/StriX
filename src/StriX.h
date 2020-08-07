@@ -11,6 +11,7 @@
 #include "consts/console.h"
 
 #include "funcs/prototypes.h"
+#include "funcs/console.h"
 #include "funcs/maths.h"
 #include "funcs/data.h"
 #include "funcs/physics.h"

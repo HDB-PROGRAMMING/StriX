@@ -25,7 +25,10 @@ sudo make install
 ```
 
 ## How can I use StriX in my project?
-The first thing you need to do is install StriX, then go to the file you want to include StriX and follow the instructions below for your programming language, StriX is aviable for C/C++ and Python with ctypes (cdll).
+You've got 3 options, which are locate StriX in your project via linking your project with the StriX dll, locate StriX source in your project's source and then include it or locate StriX's source in your compiler's include folder.
+
+### Linking your project with the StriX dll
+The first thing you need to do is install StriX, then go to the file you want to include StriX and follow the instructions below for your programming language, StriX dll is aviable for C/C++ and Python with ctypes (cdll).
 
 #### C/C++
 ```c++
@@ -37,5 +40,31 @@ from ctypes import cdll
 StriX = cdll.LoadLibrary('[StriX dir]')
 ```
 And you've done, StriX library is identified as an object, in this case it's called StriX but you can call it whatever you want.
+
+### Locating StriX's source in your project's source
+First, go to the releases and download the latest release's source code as a .zip or .tar.gz file and decompress it, then go to your project and copy StriX's source folder (the folder named src) content to a folder in your project's source named StriX, then go to the file you want to include StriX and type this line of code at the beginning of the file:
+
+#### C/C++
+```c++
+#include "StriX/StriX.h"
+``` 
+And StriX will be included in your C/C++ project.
+
+### Locating StriX's source in your compiler's include folder
+First, go to the releases and download the latest release's source code as a .zip or .tar.gz file and decompress it, then open your terminal in the decompressed folder and follow the instructions bellow for your operative system:
+
+#### Windows
+```batch
+cd win
+locate
+```
+#### Mac OS X
+```zsh
+sudo make locate
+```
+#### GNU/Linux
+```bash
+sudo make locate
+```
 
 If you want to contact me, click [here](mailto:hdbprogramming@gmail.com).

@@ -113,6 +113,16 @@ static float divt(float nums[], int lenght) {
 }
 // Here are divt functions
 
+static int remt(int nums[], int lenght) {
+    int tmp = nums[0];
+    for (int i = 1; i < lenght; i++) {
+        tmp %= nums[i];
+    }
+
+    return tmp;
+}
+// Here is the remt function
+
 static int powt(int nums[], int lenght) {
     int tmp = nums[0];
     for (int i = 1; i < lenght; i++) {

@@ -10,6 +10,7 @@ static float  mult(float  nums[], int lenght);
 static int    divt(int    nums[], int lenght);
 static double divt(double nums[], int lenght);
 static float  divt(float  nums[], int lenght);
+static int    remt(int    nums[], int lenght);
 static int    powt(int    nums[], int lenght);
 static double powt(double nums[], int lenght);
 static float  powt(float  nums[], int lenght);

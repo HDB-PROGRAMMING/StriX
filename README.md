@@ -2,25 +2,28 @@
 **StriX** is an Open Source framework for maths and data management, it contains multiple functions such as the popular algorithm Merge Sort, you can download this library to use it in your maths, physics and data projects.
 
 ## How can I install StriX in my computer?
-You can install StriX by various ways, these are the ways you can install it in Windows, MacOS X and GNU/Linux.
+You can install StriX by various ways, these are the ways you can install it in Windows, MacOS X and GNU/Linux. First, you need to download ready to compile source from the last release and then, follow the instructions below:
 
 #### Windows
 Go to releases and download the installer for the last varsion aviable, the execute it and click next to all to install StriX in your computer or you can type this on CMD as administrator.
 ```batch
-git clone https://github.com/HDB-PROGRAMMING/StriX.git
 cd StriX\win
 install
 ```
 #### Mac OS X
 ```zsh
-git clone https://github.com/HDB-PROGRAMMING/StriX.git
 cd StriX
+vim Makefile
+# To edit the Makefile
+
 sudo make install
 ```
 #### GNU/Linux
 ```bash
-git clone https://github.com/HDB-PROGRAMMING/StriX.git
 cd StriX
+vim Makefile
+# To edit the Makefile
+
 sudo make install
 ```
 
@@ -42,11 +45,18 @@ StriX = cdll.LoadLibrary('[StriX dir]')
 And you've done, StriX library is identified as an object, in this case it's called StriX but you can call it whatever you want.
 
 ### Locating StriX's source in your project's source
-First, go to the releases and download the latest release's source code as a .zip or .tar.gz file and decompress it, then go to your project and copy StriX's source folder (the folder named src) content to a folder in your project's source named StriX, then go to the file you want to include StriX and type this line of code at the beginning of the file:
+First, go to the releases and download the latest release's source code as a .zip or .tar.gz file and decompress it, then go to your project and copy StriX's source folder (the folder named src) content to a folder in your project's source named StriX, then go to the file you want to include StriX and type this/these lines of code at the beginning of the file:
 
 #### C/C++
 ```c++
 #include "StriX/StriX.h"
+// To include the whole framework
+
+#include "StriX/Console.h"
+#include "StriX/Data.h"
+#include "StriX/Maths.h"
+#include "StriX/Physics.h"
+// To include every module separated
 ``` 
 And StriX will be included in your C/C++ project.
 

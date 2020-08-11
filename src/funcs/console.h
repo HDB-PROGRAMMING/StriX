@@ -1,3 +1,6 @@
+#pragma once
+// Here we define that the module is only imported once
+
 static void gotoxy(int x, int y) {
 	HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);
 	COORD dwPos;

@@ -1,22 +1,12 @@
 #pragma once
 
 #ifndef StriX
-#define StriX
+ #define StriX
+ #define StriX_Ver "1.5"
 
-#include "libs/std.h"
-#include "libs/datat.h"
-
-#include "consts/maths.h"
-#include "consts/physics.h"
-#include "consts/console.h"
-
-#include "funcs/prototypes.h"
-#include "funcs/console.h"
-#include "funcs/maths.h"
-#include "funcs/data.h"
-#include "funcs/physics.h"
-
-#include "structs/maths.h"
-#include "structs/datat.h"
+ #include "Console.h"
+ #include "Data.h"
+ #include "Maths.h"
+ #include "Physics.h"
 
 #endif

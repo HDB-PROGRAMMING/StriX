@@ -1,27 +1,27 @@
 #pragma once
 // Here we define that the module is only imported once
 
-static int addt(int nums[], int lenght) {
+static int addt(int nums[], int length) {
     int tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp += nums[i];
     }
 
     return tmp;
 }
 
-static double addt(double nums[], int lenght) {
+static double addt(double nums[], int length) {
 	double tmp = nums[0];
-	for (int i = 1; i < lenght; i++) {
+	for (int i = 1; i < length; i++) {
 		tmp += nums[i];
 	}
 
 	return tmp;
 }
 
-static float addt(float nums[], int lenght) {
+static float addt(float nums[], int length) {
     float tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp += nums[i];
     }
 
@@ -29,27 +29,27 @@ static float addt(float nums[], int lenght) {
 }
 // Here are addt functions
 
-static int subt(int nums[], int lenght) {
+static int subt(int nums[], int length) {
     int tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp -= nums[i];
     }
 
     return tmp;
 }
 
-static double subt(double nums[], int lenght) {
+static double subt(double nums[], int length) {
     double tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp -= nums[i];
     }
 
     return tmp;
 }
 
-static float subt(float nums[], int lenght) {
+static float subt(float nums[], int length) {
     float tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp -= nums[i];
     }
 
@@ -57,27 +57,27 @@ static float subt(float nums[], int lenght) {
 }
 // Here are subt functions
 
-static int mult(int nums[], int lenght) {
+static int mult(int nums[], int length) {
     int tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp *= nums[i];
     }
 
     return tmp;
 }
 
-static double mult(double nums[], int lenght) {
+static double mult(double nums[], int length) {
     double tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp *= nums[i];
     }
 
     return tmp;
 }
 
-static float mult(float nums[], int lenght) {
+static float mult(float nums[], int length) {
     float tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp *= nums[i];
     }
 
@@ -85,27 +85,27 @@ static float mult(float nums[], int lenght) {
 }
 // Here are mult functions
 
-static int divt(int nums[], int lenght) {
+static int divt(int nums[], int length) {
     int tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp /= nums[i];
     }
 
     return tmp;
 }
 
-static double divt(double nums[], int lenght) {
+static double divt(double nums[], int length) {
     double tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp /= nums[i];
     }
 
     return tmp;
 }
 
-static float divt(float nums[], int lenght) {
+static float divt(float nums[], int length) {
     float tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp /= nums[i];
     }
 
@@ -113,9 +113,9 @@ static float divt(float nums[], int lenght) {
 }
 // Here are divt functions
 
-static int remt(int nums[], int lenght) {
+static int remt(int nums[], int length) {
     int tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp %= nums[i];
     }
 
@@ -123,49 +123,33 @@ static int remt(int nums[], int lenght) {
 }
 // Here is the remt function
 
-static int powt(int nums[], int lenght) {
+static int powt(int nums[], int length) {
     int tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp = pow(tmp, nums[i]);
     }
 
     return tmp;
 }
 
-static double powt(double nums[], int lenght) {
+static double powt(double nums[], int length) {
     double tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp = pow(tmp, nums[i]);
     }
 
     return tmp;
 }
 
-static float powt(float nums[], int lenght) {
+static float powt(float nums[], int length) {
     float tmp = nums[0];
-    for (int i = 1; i < lenght; i++) {
+    for (int i = 1; i < length; i++) {
         tmp = pow(tmp, nums[i]);
     }
 
     return tmp;
 }
 // Here are powt functions
-
-static int toInt(double n) {
-    int val = n;
-    return val;
-}
-
-static double toDouble(float n) {
-    double val = n;
-    return val;
-}
-
-static float toFloat(double n) {
-    float val = n;
-    return val;
-}
-// Here we defined data types conversion functions
 
 static double sqrArea(double side) {
     return side * side;
@@ -290,38 +274,6 @@ static int sqroot(int n) {
     return sqroot(n, 1, 0);
 }
 
-static int roundFloor(double n) {
-    int val = n;
-    return val;
-}
-
-static int roundUp(double n) {
-    int val = roundFloor(n);
-    return val++;
-}
-
-static double extend(double num, int quantity){
-	return num * pow(10, quantity);
-}
-
-static double shorten(double num, int quantity){
-	return num / pow(10, quantity);
-}
-
-static double toPositive(double n) {
-    if (n >= 0) return n;
-    else {
-        return n + (n * -2);
-    }
-}
-
-static double toNegative(double n) {
-    if (n < 0) return n;
-    else {
-        return n - (n * 2);
-    }
-}
-
 static bool isPI(double n) {
     if (n == PI) return true;
     else return false;
@@ -340,20 +292,4 @@ static bool isGAMMA(double n) {
 static bool isTAU(double n) {
     if (n == TAU) return true;
     else return false;
-}
-
-static bool isINFINITY(double n) {
-    if (n == INFINITY) return true;
-    else return false;
-}
-
-static bool isNAN(double n) {
-    if (n == NaN) return true;
-    else return false;
-}
-
-static double* destroyVariable(double* variable) {
-    double* tmp = variable;
-    free(variable);
-    return tmp;
 }

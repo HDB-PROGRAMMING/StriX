@@ -1,9 +1,10 @@
 #pragma once
 // Here we define that the module is only imported once
 
-typedef void* null;
-
 typedef char* String;
+
+typedef void*                  let;
+typedef const void*            def;
 
 typedef signed short           negative_2;
 typedef signed int             negative_4;

@@ -7,6 +7,70 @@ static void swap(double num1, double num2) {
 	num2 = temp;
 }
 
+static double* destroyVariable(double* variable) {
+    double* tmp = variable;
+    free(variable);
+    return tmp;
+}
+
+static int toInt(double n) {
+    int val = n;
+    return val;
+}
+
+static double toDouble(float n) {
+    double val = n;
+    return val;
+}
+
+static float toFloat(double n) {
+    float val = n;
+    return val;
+}
+// Here we defined data types conversion functions
+
+static int roundFloor(double n) {
+    int val = n;
+    return val;
+}
+
+static int roundUp(double n) {
+    int val = roundFloor(n);
+    return val++;
+}
+
+static double extend(double num, int quantity) {
+    return num * pow(10, quantity);
+}
+
+static double shorten(double num, int quantity) {
+    return num / pow(10, quantity);
+}
+
+static double toPositive(double n) {
+    if (n >= 0) return n;
+    else {
+        return n + (n * -2);
+    }
+}
+
+static double toNegative(double n) {
+    if (n < 0) return n;
+    else {
+        return n - (n * 2);
+    }
+}
+
+static bool isINFINITY(double n) {
+    if (n == INFINITY) return true;
+    else return false;
+}
+
+static bool isNAN(double n) {
+    if (n == NaN) return true;
+    else return false;
+}
+
 static void mergeSort(int* array, int l, int m, int r) {
     int i, j, k, nl, nr;
     //size of left and right sub-arrays
@@ -65,4 +129,8 @@ static int range(double init, double end) {
         nums[i] = i;
     }
     return *nums;
+}
+
+static int select(int* arr, int length) {
+    return arr[rand() % (length + 1)];
 }
